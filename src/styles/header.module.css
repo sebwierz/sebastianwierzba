@@ -1,0 +1,11 @@
+header {
+    width: 100%;
+    background-color: var(--color-grey);
+}
+
+
+/* wie kann der Klassenname der Navigation "nav-menu" angesprochen und formatiert werden, der in einem Unterordner liegt? Es geht bei mir zwar mit 'header nav', aber damit spreche ich ja alle nav-Elemente an, ich möchte aber die Klasse ansprechen... */
+header .nav-menu {
+color: red;
+
+}

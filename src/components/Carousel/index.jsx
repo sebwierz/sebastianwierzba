@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from '../../styles/carousel.module.css'
 
 
 export default function Carousel(){
 
     return(
-        <div>
+        <section>
             <h1>Carousel</h1>
-        </div>
+        </section>
     )
 }
