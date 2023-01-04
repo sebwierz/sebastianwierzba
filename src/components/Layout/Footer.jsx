@@ -6,7 +6,7 @@ export default function Footer(){
 
     return(
         <footer>
-            <h1>Footer</h1>
+            <p>© 2023 Sebastian Wierzba | All Rights reserved.</p>
         </footer>
     )
 }

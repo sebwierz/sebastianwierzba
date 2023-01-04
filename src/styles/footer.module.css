@@ -1,3 +1,13 @@
 footer {
-    color: blue;
+    width: 100%;
+    background-color: var(--color-grey);
+    color: var(--color-wheat);
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+footer p {
+    padding: 15px 0px;
 }

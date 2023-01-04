@@ -1,6 +1,6 @@
 import React from 'react';
-import NavMenu from './NavMenu/navmenu';
-import Title from './Title/title';
+import NavMenu from './NavMenu';
+import Title from './Title';
 import styles from '../../styles/header.module.css'
 
 
