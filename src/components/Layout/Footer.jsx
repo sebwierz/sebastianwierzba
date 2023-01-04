@@ -6,7 +6,19 @@ export default function Footer(){
 
     return(
         <footer className={styles}>
-            <p>© 2023 Sebastian Wierzba | All Rights reserved.</p>
+            <div className={styles.upwards}>
+                <p>Pfeil-Icon</p>
+            </div>
+            <div className={styles.icons}>
+                <p>LinkedIn-Icon</p>
+                <p>Xing-Icon</p>
+                <p>GitHub-Icon</p>
+                <p>Mail-Icon</p>
+            </div>
+            <div className={styles.impressum}>
+                <p>© 2023 Sebastian Wierzba</p>
+                <p>All Rights reserved.</p>
+            </div>
         </footer>
     )
 }
