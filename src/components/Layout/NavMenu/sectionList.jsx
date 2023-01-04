@@ -1,11 +1,12 @@
 import React from "react";
 import Section from "./Section";
+import styles from '../../../styles/NavMenu.module.css'
 
 
 
-export default function sectionList(){
+export default function SectionList(){
     return(
-       <ul>
+       <ul className={styles}>
         <Section name="Home"/>
         <Section name="About Me"/>
         <Section name="Skills"/>

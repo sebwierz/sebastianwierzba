@@ -1,15 +1,13 @@
 import React from 'react';
 import NavMenu from './NavMenu';
-import Title from './Title';
-import styles from '../../styles/header.module.css'
+import styles from '../../styles/Header.module.css'
 
 
-export default function header(){
+export default function Header(){
 
     return(
-        <header>
-            <Title name="Sebastian Wierzba"/>
-            <NavMenu/>
+        <header className={styles}>
+            <NavMenu name="Sebastian Wierzba"/>
         </header>
     )
 }
