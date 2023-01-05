@@ -1,4 +1,6 @@
 .aboutMeSection{
-    outline: 1px solid black;
+    background-color: var(--color-black);
     width: 100%;
+    color: var(--color-wheat);
+   
 }
