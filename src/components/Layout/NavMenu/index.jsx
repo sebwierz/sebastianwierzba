@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionList from "./SectionList";
+import NavList from "./NavList";
 import styles from '../../../styles/NavMenu.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faNavicon} from '@fortawesome/free-solid-svg-icons'
@@ -15,7 +15,7 @@ export default function NavMenu({name}){
                 <FontAwesomeIcon icon={faNavicon} size="2x" className={styles.burgerMenu}></FontAwesomeIcon>
             </div>
             <nav className={styles.navigation}>
-                <SectionList/> 
+                <NavList/> 
             </nav>
          
            
