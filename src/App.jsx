@@ -1,7 +1,7 @@
 import Layout from './components/Layout'
-import Carousel from './components/Carousel'
-import AboutMe from './components/AboutMe'
-import Contact from './components/Contact'
+import CarouselSection from './components/CarouselSection'
+import AboutMeSection from './components/AboutMeSection'
+import ContactSection from './components/ContactSection'
 
 
 import './App.css'
@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Carousel/>
-        <AboutMe/>
-        <Contact/>
+        <CarouselSection/>
+        <AboutMeSection/>
+        <ContactSection/>
       </Layout>
     </div>
   )

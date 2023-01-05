@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/AboutMeSection.module.css'
 
-export default function AboutMe(){
+export default function AboutMeSection(){
 
     return(
         <section id="aboutMe" className={styles.aboutMeSection}>
