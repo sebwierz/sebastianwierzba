@@ -4,8 +4,10 @@ import styles from '../../styles/Contact.module.css'
 export default function Contact(){
 
     return(
-        <section className={styles.contactSection}>
-            <h1>Contact</h1>
+        <section id="contact" className={styles.contactSection}>
+            <div className={styles.innerSection}>
+                <h1>Contact</h1>
+            </div>
         </section>
     )
 }
