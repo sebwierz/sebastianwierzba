@@ -1,7 +1,6 @@
-.contactSection {
+.skillsSection {
     background-color: var(--color-lightblue);
     color: var(--color-black);
-    width: 100%;
     min-height: 100vh;
     width: 100%;
 }
@@ -13,12 +12,12 @@
     margin: auto;
 }
 
-.contactSection h1, h3, p {
+.skillsSection h1,h3,p {
     display: flex;
     justify-content: center;
 }
 
-.contactSection h1 {
+.skillsSection h1 {
     padding: 40px 0px 30px;
     font-size: xx-large;
 }
