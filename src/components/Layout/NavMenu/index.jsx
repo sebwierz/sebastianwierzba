@@ -1,6 +1,6 @@
 import React from 'react';
 import NavList from "./NavList";
-import styles from '../../../styles/NavMenu.module.css'
+import styles from '../../../styles/NavMenuMain.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faNavicon} from '@fortawesome/free-solid-svg-icons'
 
