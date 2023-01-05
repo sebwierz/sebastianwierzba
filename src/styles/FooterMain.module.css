@@ -1,15 +1,16 @@
 footer {
     background-color: var(--color-grey);
     color: var(--color-wheat);
-    font-size: 12px;  
+    font-size: 12px;
 }
 
-.upwards{
+.upwards {
     display: flex;
     justify-content: center;
     padding: 20px 0px 8px 0px;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: center;
     padding: 8px 0px
@@ -19,11 +20,11 @@ footer {
     padding: 5px 10px;
 }
 
-.impressum{
+.impressum {
     text-align: center;
     padding: 10px 0px 20px;
 }
 
 .impressum p {
-    padding: 3px 0px; 
+    padding: 3px 0px;
 }

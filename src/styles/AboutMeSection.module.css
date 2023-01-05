@@ -1,23 +1,25 @@
-.aboutMeSection{
+.aboutMeSection {
     background-color: var(--color-black);
     color: var(--color-wheat);
     min-height: 100vh;
     width: 100%;
 }
 
-.innerSection{
+.innerSection {
     width: 80%;
     height: auto;
     max-width: 900px;
     margin: auto;
 }
 
-.aboutMeSection h1, h2, p {
+.aboutMeSection h1,
+h2,
+p {
     display: flex;
     justify-content: center;
 }
 
-.aboutMeSection h1{
+.aboutMeSection h1 {
     padding: 40px 0px 30px;
     font-size: xx-large;
 }
@@ -25,8 +27,8 @@
 .aboutMeSection h2 {
     padding: 20px 0px 10px;
 }
- 
-.aboutMeSection img{
+
+.aboutMeSection img {
     display: block;
     margin: auto;
     border-radius: 50px;
@@ -35,25 +37,27 @@
     min-width: 105px;
 }
 
-.location, .icons {
-display: flex;
-justify-content: center;
-padding: 8px 20px;
+.location,
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
 }
 
-.location p,.icons p {
+.location p,
+.icons p {
     padding: 5px 10px;
 }
 
-.description{
-    padding: 20px 0px; 
+.description {
+    padding: 20px 0px;
 }
 
-.buttons{
+.buttons {
     justify-content: center;
 }
 
-.aboutMeSection button{
+.aboutMeSection button {
     display: flex;
     font-weight: bold;
     margin: 10px auto;
@@ -68,5 +72,5 @@ padding: 8px 20px;
 .aboutMeSection button:hover {
     background-color: var(--color-blue);
     color: var(--color-wheat);
-    
+
 }

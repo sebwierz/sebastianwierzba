@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../../styles/Carousel.module.css'
+import styles from '../../styles/CarouselSection.module.css'
 
 
-export default function Carousel(){
+export default function CarouselSection(){
 
     return(
         <section id="carousel" className={styles.carouselSection}>

@@ -13,7 +13,9 @@
     margin: auto;
 }
 
-.contactSection h1, h3, p {
+.contactSection h1,
+h3,
+p {
     display: flex;
     justify-content: center;
 }
