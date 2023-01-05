@@ -29,7 +29,7 @@
 .aboutMeSection img{
     display: block;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 50px;
     width: 40%;
     max-width: 270px;
     min-width: 105px;
@@ -50,10 +50,23 @@ padding: 8px 20px;
 }
 
 .buttons{
-    display: flex;
     justify-content: center;
 }
 
-.button{
- padding: 5px;
+.aboutMeSection button{
+    display: flex;
+    font-weight: bold;
+    margin: 10px auto;
+    background-color: var(--color-wheat);
+    color: var(--color-blue);
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    min-width: 142px;
+}
+
+.aboutMeSection button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-wheat);
+    
 }

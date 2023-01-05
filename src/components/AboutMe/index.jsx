@@ -6,7 +6,7 @@ export default function AboutMe(){
     return(
         <section id="aboutMe" className={styles.aboutMeSection}>
             <div className={styles.innerSection}>
-                <h1>AboutMe</h1>
+                <h1>About Me</h1>
                 <img src="../../../assets/sw.jpg" alt="Sebastian Wierzba"/>
                 <h2>Sebastian Wierzba</h2>
                 <div className={styles.location}>
@@ -31,6 +31,7 @@ export default function AboutMe(){
                 <div className={styles.buttons}>
                     <button type="button">Download CV</button>
                     <button type="button" onClick={'#contact'}>Contact</button>
+                    <br />
                 </div>
             </div>
         </section>
