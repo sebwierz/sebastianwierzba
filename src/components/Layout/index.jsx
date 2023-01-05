@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Header from './Header';
-import Footer from './Footer';
+import HeaderMain from './HeaderMain';
+import FooterMain from './FooterMain';
 
 
 export default function Layout({children}){
 
     return(
         <>
-            <Header/>       
+            <HeaderMain/>       
                 {children}
-            <Footer/>
+            <FooterMain/>
             
         </>
     )
