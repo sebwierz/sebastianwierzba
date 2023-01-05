@@ -7,7 +7,7 @@ export default function SectionList(){
     return(
        <ul className={styles.sectionlist}>
             <li><a href="">Home</a></li>
-            <li><a href="#aboutMe">AboutMe</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
