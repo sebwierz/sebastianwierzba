@@ -20,6 +20,6 @@ h1{
   font-family: var(--font-family-sketch);  
 }
 
-p, li {
+h2, h3, p, li {
   font-family: var(--font-family-krub);
 }
