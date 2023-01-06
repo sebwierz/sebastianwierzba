@@ -1,8 +1,9 @@
-.aboutMeSection {
+.aboutMeSection { 
     background-color: var(--color-black);
     color: var(--color-wheat);
     min-height: 100vh;
     width: 100%;
+    scroll-margin-top:5rem;
 }
 
 .innerSection {
@@ -68,7 +69,13 @@ p {
     border-radius: 10px;
     transition-duration: 0.4s;
     min-width: 150px;
+    cursor: pointer;
     
+}
+
+.aboutMeSection a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .aboutMeSection button:hover {

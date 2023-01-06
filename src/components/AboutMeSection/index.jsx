@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/AboutMeSection.module.css'
+import ContactSection from '../ContactSection';
 
 export default function AboutMeSection(){
 
@@ -30,7 +31,7 @@ export default function AboutMeSection(){
                 </div>
                 <div className={styles.buttons}>
                     <button type="button">Download CV</button>
-                    <button type="button" onClick={'#contact'}>Contact</button>
+                    <a href='/#contact'><button type="button">Contact</button></a>
                     <br />
                 </div>
             </div>
