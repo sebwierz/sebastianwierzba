@@ -59,6 +59,7 @@ p {
 
 .aboutMeSection button {
     display: flex;
+    justify-content: center;
     font-weight: bold;
     margin: 10px auto;
     background-color: var(--color-wheat);
@@ -66,11 +67,12 @@ p {
     padding: 10px 30px;
     border-radius: 10px;
     transition-duration: 0.4s;
-    min-width: 142px;
+    min-width: 150px;
+    
 }
 
 .aboutMeSection button:hover {
-    background-color: var(--color-blue);
-    color: var(--color-wheat);
-
+    background-color: var(--color-lightblue);
+    color: var(--color-black);
+    text-shadow: 0.5px 0.5px 1px var(--color-black);
 }

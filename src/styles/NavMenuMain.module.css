@@ -1,12 +1,27 @@
-.titleBurger {
+.title {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.titleAndDropdown {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
 }
 
+.button{
+    border: none; 
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .burgerMenu {
     color: var(--color-wheat);
     margin: 10px 20px;
+}
+
+.burgerMenu:hover{
+    color: var(--color-black);
 }
 
 .navigation {
@@ -17,22 +32,27 @@
     text-align: center;
 }
 
-ul {
+.navigation ul {
     list-style-type: none;
 }
 
-li {
+.navigation li {
     padding: 10px 12px 10px 10px;
     border-style: solid;
     border-width: 1px;
+    transition-duration: 0.5s;
 }
 
-a {
+.navigation li:hover {
+    border-style: solid var(--color-wheat);;
+    border-width: 1px;
+    background-color: var(--color-lightblue);
+    color: var(--color-black);
+    text-shadow: 0.5px 0.5px 1px var(--color-black);
+}
+
+.navigation a {
     color: inherit;
     text-decoration: inherit;
 }
 
-h1 {
-    padding: 10px 20px;
-    font-weight: bold;
-}
