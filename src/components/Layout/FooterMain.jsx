@@ -7,7 +7,9 @@ export default function FooterMain(){
     return(
         <footer className={styles}>
             <div className={styles.upwards}>
-                <p>Pfeil-Icon</p>
+                <a href="#top">
+                    <button>Pfeil-Icon</button>
+                </a>
             </div>
             <div className={styles.icons}>
                 <p>LinkedIn-Icon</p>

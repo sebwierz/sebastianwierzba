@@ -11,23 +11,24 @@ export default function NavMenuMain({name}){
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
+    function toggleNav(e){
+        e.preventDefault();
+        setIsNavExpanded(!isNavExpanded)
+    }
+
     return(
         <>
-            <div className={styles.titleAndDropdown}>
-                <h1 className={styles.title}>{name}</h1>
-                <button className={styles.button} onClick={setIsNavExpanded(!isNavExpanded)}>
-                    <FontAwesomeIcon icon={faNavicon} size="2x" className={styles.burgerMenu}></FontAwesomeIcon>
-                </button>
-
-                <div>
-                    <nav className={styles.navigation}>
-                        {isNavExpanded ? <NavList/> : "" }
-                    </nav>
+            <div >
+                <div className={styles.titleAndDropdown}>
+                    <h1 className={styles.title}>{name}</h1>
+                        <button className={styles.button} onClick={toggleNav} >
+                            <FontAwesomeIcon icon={faNavicon} size="2x" className={styles.burgerMenu}></FontAwesomeIcon>
+                        </button>
                 </div>
-                
+                <nav className={styles.navigation}>
+                    <NavList isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded}/>
+                </nav>                
             </div>
-                    
-           
         </>
     )
 }

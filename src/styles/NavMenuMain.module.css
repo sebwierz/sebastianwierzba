@@ -22,6 +22,7 @@
 
 .burgerMenu:hover{
     color: var(--color-black);
+    transform: scale(1.2);
 }
 
 .navigation {
@@ -56,3 +57,16 @@
     text-decoration: inherit;
 }
 
+.sectionListOpen{
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    left: 0;
+    background: white;
+
+}
+
+.sectionListClosed{
+    display: none;
+}
