@@ -35,6 +35,8 @@
 
 .navigation ul {
     list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .navigation li {
@@ -58,15 +60,25 @@
 }
 
 .sectionListOpen{
-    height: 100vh;
     position: absolute;
     z-index: 200;
     width: 100%;
     left: 0;
-    background: white;
+    background: var(--color-grey)
 
 }
 
 .sectionListClosed{
     display: none;
+}
+
+.closeButton{
+    color: var(--color-black);
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+
 }

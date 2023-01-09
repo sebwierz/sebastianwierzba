@@ -2,5 +2,6 @@ header {
     background-color: var(--color-grey);
     display: block;
     position: sticky;
-    top: 0px
+    top: 0px;
+    border-bottom: solid 1px var(--color-wheat)
 }

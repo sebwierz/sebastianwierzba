@@ -13,7 +13,7 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
 
     return(
         <div className={isNavExpanded ? styles.sectionListOpen : styles.sectionListClosed}>
-            <button onClick={handleClose}>Close</button>
+            
        <ul >
             <li><a href="#top">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
@@ -21,6 +21,7 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
             <li><a href="#projects" >Projects</a></li>
             <li><a href="#experience" >Experience</a></li>
             <li><a href="#contact" >Contact</a></li>
+            <li><button className={styles.closeButton} onClick={handleClose}>Close</button></li>
        </ul>
        </div>
     )
