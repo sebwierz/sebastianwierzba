@@ -33,7 +33,7 @@
     text-decoration:inherit;
 }
 
-button {
+.button {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -48,7 +48,7 @@ button {
     border: none;
 }
 
-button a {
+.button a {
     color: inherit;
     text-decoration: inherit;
 }

@@ -13,7 +13,7 @@ export default function ContactSection(){
                     <p>I am looking forward to your message via <a href="mailto:sebastianwierzba@web.de">e-mail</a>, <a href="https://de.linkedin.com/in/sebastian-wierzba" target="_blank">LinkedIn</a>  or <a href="https://www.xing.com/profile/Sebastian_Wierzba2/" target="blank">Xing</a>.</p>
                     <br/>
                 </div>
-                <a href="mailto:sebastianwierzba@web.de"><button type="button">Send E-Mail</button></a>
+                <a href="mailto:sebastianwierzba@web.de"><button type="button" className={styles.button}>Send E-Mail</button></a>
                 <div className={styles.icons}>
                     <p className={styles.icon}>Linked-In-Icon</p>
                     <p className={styles.icon}>Xing-Icon</p>
