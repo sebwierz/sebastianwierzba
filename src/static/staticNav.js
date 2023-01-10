@@ -8,7 +8,7 @@ export const staticNav = [
      {
         id:"2",
         title: "About Me",
-        link: "#aboutme"
+        link: "#aboutMe"
      },
       {
         id:"3",
