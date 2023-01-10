@@ -1,7 +1,32 @@
-header {
+.header {
     background-color: var(--color-grey);
     display: block;
     position: sticky;
     top: 0px;
     border-bottom: solid 1px var(--color-wheat)
 }
+
+@media only screen and (min-width: 900px) {
+    .mobileView {
+        display: none;
+    }
+
+    .title {
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+.mobileView {
+    display: none; 
+    }
+.mobileView .title {
+    display: none;
+ }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .fullSizeView {
+        display: none;
+    }}

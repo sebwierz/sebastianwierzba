@@ -1,5 +1,7 @@
 import React from "react";
-import styles from '../../../styles/NavMenuMain.module.css'
+import NavItem from "./NavItem.jsx";
+import {staticNav} from '../../../static/staticNav.js';
+import styles from '../../../styles/MobileNav.module.css'
 
 
 
@@ -10,19 +12,19 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
         setIsNavExpanded(!isNavExpanded)
     }
 
+    const NavItems = staticNav.map((item)=>{
+        return(
+            <NavItem key={item.id} title={item.title} link={item.link} />
+        )
+    })
+
 
     return(
-        <div className={isNavExpanded ? styles.sectionListOpen : styles.sectionListClosed}>
-            
-       <ul >
-            <li><a href="#top">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects" >Projects</a></li>
-            <li><a href="#experience" >Experience</a></li>
-            <li><a href="#contact" >Contact</a></li>
-            <li><button className={styles.closeButton} onClick={handleClose}>Close</button></li>
-       </ul>
+       <div className={isNavExpanded ? styles.sectionListOpen : styles.sectionListClosed}>    
+            <ul>
+                {NavItems}
+                <li><button className={styles.closeButton} onClick={handleClose}>Close</button></li>
+            </ul>
        </div>
     )
 }
