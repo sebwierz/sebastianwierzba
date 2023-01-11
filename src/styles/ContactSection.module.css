@@ -51,6 +51,7 @@
 .button a {
     color: inherit;
     text-decoration: inherit;
+    
 }
 
 .button:hover {
@@ -64,8 +65,18 @@
     display: flex;
     justify-content: center;
     padding: 8px 20px;
+    margin: auto;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    fill: var(--color-black);
 }
 
 .icon {
-    padding: 5px 20px;
+    fill: var(--color-blue);
+    height: 35px;
+    margin: 10px 20px;
 }

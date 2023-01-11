@@ -26,7 +26,7 @@ p {
 }
 
 .aboutMeSection h2 {
-    padding: 20px 0px 10px;
+    padding: 20px 0px 0px;
 }
 
 .aboutMeSection img {
@@ -37,17 +37,38 @@ p {
     max-width: 270px;
     min-width: 105px;
 }
-
-.location,
 .icons {
     display: flex;
     justify-content: center;
     padding: 8px 20px;
+    margin: auto;
 }
 
-.location p,
-.icons p {
-    padding: 5px 10px;
+.icon:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    fill: var(--color-lightblue);
+}
+
+.icon{
+    fill: var(--color-wheat);
+    height: 35px;
+    margin: 10px 20px;
+}
+
+.location  {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.location .icon {
+    height: 20px;
+}
+
+.location .city {
+    font-size: larger;
 }
 
 .description {
@@ -58,7 +79,7 @@ p {
     justify-content: center;
 }
 
-.aboutMeSection button {
+.bigButton {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -78,7 +99,7 @@ p {
     text-decoration: inherit;
 }
 
-.aboutMeSection button:hover {
+.bigButton:hover {
     background-color: var(--color-lightblue);
     color: var(--color-black);
     text-shadow: 0.5px 0.5px 1px var(--color-black);
