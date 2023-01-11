@@ -1,0 +1,24 @@
+.skillsSection {
+    background-color: var(--color-lightblue);
+    color: var(--color-black);
+    min-height: 100vh;
+    width: 100%;
+    scroll-margin-top: 57px;
+}
+
+.innerSection {
+    width: 80%;
+    height: auto;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skillsSection h1,h3,p {
+    display: flex;
+    justify-content: center;
+}
+
+.skillsSection h1 {
+    padding: 40px 0px 30px;
+    font-size: xx-large;
+}
