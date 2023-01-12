@@ -36,9 +36,9 @@
   display: block;
 }
 
-.description a {
+a {
     color: inherit;
-    text-decoration:inherit;
+    text-decoration: inherit;
 }
 
 .contactSection .button {
@@ -69,11 +69,15 @@
     text-shadow: 0.5px 0.5px 1px var(--color-grey);
 }
 
+
 .icons {
     display: flex;
     justify-content: center;
-    padding: 8px 20px;
-    margin: auto;
+}
+.icons a{
+    display: inline-flex;
+    justify-content: center;
+    margin: 18px 30px;
 }
 
 .icon:hover {
@@ -86,7 +90,6 @@
 .icon {
     fill: var(--color-blue);
     height: 35px;
-    margin: 10px 20px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -94,9 +97,6 @@
         justify-content: flex-start;
     }
 
-    .button{
-        margin: 0; 
-    }
 
     .alignleft{
         display: flex;
@@ -104,23 +104,18 @@
     }
 
     .icons{
-        padding-left: 20px;
         justify-content: flex-start;
-        margin: 0;
+
     }
 
     .icon{
         padding-top: 3px;
         height: 46px;
-        padding-bottom: -3px;
+        padding-bottom: -3px; 
     } 
-}
 
-@media only screen and (min-width: 600px) {
-    
-
-}
-
-@media only screen and (max-width: 600px) {
-    
+    .icons a {
+        margin-left: 80px ;
+        margin-right: 0px;
+    }
 }

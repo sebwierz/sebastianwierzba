@@ -3,6 +3,6 @@ import React from "react";
 export default function NavItem({title, link}){
 
     return( 
-    <li><a href={link}>{title}</a></li>
+    <a href={link}><li>{title}</li></a>
     )
 }

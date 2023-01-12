@@ -52,10 +52,20 @@ p {
     fill: var(--color-lightblue);
 }
 
-.icon {
+.icons a{
+    margin: 10px 20px;
+}
+
+.iconlocation {
     fill: var(--color-wheat);
     height: 35px;
     margin: 10px 20px;
+}
+
+.icon {
+    fill: var(--color-wheat);
+    height: 35px;
+
 }
 
 .location {
@@ -84,7 +94,7 @@ p {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: var(--color-wheat);
     color: var(--color-blue);
     padding: 12px 30px;
@@ -104,4 +114,5 @@ p {
     background-color: var(--color-lightblue);
     color: var(--color-black);
     text-shadow: 0.5px 0.5px 1px var(--color-black);
+    transform: scale(1.2);
 }

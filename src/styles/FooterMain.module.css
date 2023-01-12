@@ -40,22 +40,27 @@ footer {
     margin: auto;
 }
 
-.icon:hover {
-    cursor: pointer;
-    transition-duration: 0.4s;
-    transform: scale(1.2);
-    fill: var(--color-blue);
+.icons a {
+   margin: 10px 20px;
 }
+
+
 
 .icon {
     fill: var(--color-wheat);
     height: 30px;
-    margin: 10px 20px;
 }
 
 .impressum {
     text-align: center;
     padding: 2px 0px 20px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    fill: var(--color-blue);
 }
 
 .impressum p {

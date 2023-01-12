@@ -10,7 +10,7 @@ import Image from "./InnerSection/Image";
 export default function MobileAboutMe(){
 
     return(
-         <section id="aboutMe" className={styles.aboutMeSection}>
+         <section className={styles.aboutMeSection}>
             <div className={styles.innerSection}>
                 <Title title="About Me"/>
                 <Image/>
