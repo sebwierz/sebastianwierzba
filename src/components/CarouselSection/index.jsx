@@ -5,7 +5,7 @@ import CarouselElement from './CarouselElement';
 
 export default function CarouselSection(){
 
-     const data = ["1", "2", "3", "4"];
+    const data = ["1", "2", "3", "4"];
     const [currentIndex, setCurrentIndex] = useState(0);
     const carouselInfiniteScroll = () => {
         if (currentIndex === data.length-1){
@@ -24,12 +24,9 @@ export default function CarouselSection(){
         <section id="carousel" className={styles.carouselSection}>
             <div className={styles.carouselContainer}>
                {data.map((item, index) => {
-                return <h1
-                            className={styles.carouselItem} 
-                            style={{transform: `translate(-${currentIndex * 100}%)`}}
-                            key={index}>
-                                {item}
-                        </h1>})
+                return(
+                        <CarouselElement currentIndex={currentIndex} item={item} key={index}/>
+                    ) })
                 }
             </div>
         </section> 
