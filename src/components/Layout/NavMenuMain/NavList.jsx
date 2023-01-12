@@ -23,7 +23,7 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
        <div className={isNavExpanded ? styles.sectionListOpen : styles.sectionListClosed}>    
             <ul>
                 {NavItems}
-                <li><button className={styles.closeButton} onClick={handleClose}>Close</button></li>
+                <li className={styles.closeButton} onClick={handleClose}>Close</li>
             </ul>
        </div>
     )
