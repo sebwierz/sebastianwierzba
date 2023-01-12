@@ -9,8 +9,23 @@ import Image from "./InnerSection/Image";
 
 export default function FullSizeAboutMe(){
 
+     function onButtonClick(){
+        fetch('CV.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CV.pdf';
+                alink.click();
+            })
+        })
+        
+    }
+
     return(
-         <section className={styles.aboutMeSection}>
+         <div className={styles.aboutMeSection}>
             <div className={styles.innerSection}>
                 <div className={styles.leftSection}>
                     <Image/>
@@ -23,13 +38,13 @@ export default function FullSizeAboutMe(){
                     <Title title="About Me"/>
                     <Description/>
                     <div className={styles.buttons}>
-                        <button type="button" className={styles.button}>Download CV</button>
+                        <button type="button" className={styles.button} onClick={onButtonClick} >Download CV</button>
                         <a href='/#contact'><button type="button" className={styles.button}>Contact</button></a>
                         <br />
                     </div>
                 </div>     
             </div>
-        </section>
+        </div>
     )
 
 }
