@@ -7,12 +7,14 @@
     scroll-margin-top: 57px;
 }
 
-.triangle{
+.triangle {
+    display: flex;
+    margin: auto;
     width: 0;
     height: 0;
-    border-top: 100px solid var(--color-wheat);
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;    
+    border-top: 120px solid var(--color-wheat);
+    border-left: 48vw solid transparent;
+    border-right: 48vw solid transparent;
 }
 
 .innerSection {
@@ -41,7 +43,7 @@ a {
     text-decoration: inherit;
 }
 
-.contactSection .button {
+.button {
     display: flex;
     justify-content: center;
     font-weight: bold;

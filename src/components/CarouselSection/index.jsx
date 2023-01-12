@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../../styles/CarouselSection.module.css'
+import CarouselElement from './CarouselElement';
 
 
 export default function CarouselSection(){
@@ -23,9 +24,12 @@ export default function CarouselSection(){
         <section id="carousel" className={styles.carouselSection}>
             <div className={styles.carouselContainer}>
                {data.map((item, index) => {
-                return <h1 className={styles.carouselItem} 
-                        style={{transform: `translate(-${currentIndex * 100}%)`}}
-                        key={index}>{item}</h1>})
+                return <h1
+                            className={styles.carouselItem} 
+                            style={{transform: `translate(-${currentIndex * 100}%)`}}
+                            key={index}>
+                                {item}
+                        </h1>})
                 }
             </div>
         </section> 
