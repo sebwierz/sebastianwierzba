@@ -5,7 +5,7 @@ export default function Image() {
 
     return(
 
-       <img src="../../../assets/sw.jpg" alt="Sebastian Wierzba"/>
+       <img src="../../../public/sw.jpg" alt="Sebastian Wierzba"/>
         
     )
 }

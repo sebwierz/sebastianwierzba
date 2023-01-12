@@ -1,8 +1,13 @@
 import React from "react";
 
-export default function NavItem({title, link}){
+export default function NavItem({title, link, isNavExpanded, setIsNavExpanded}){
+
+function openLink(){
+    window.location.href=link;
+    setIsNavExpanded(!isNavExpanded)
+}
 
     return( 
-    <a href={link}><li>{title}</li></a>
+    <li onClick={openLink}>{title}</li>
     )
 }
