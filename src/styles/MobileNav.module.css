@@ -31,6 +31,7 @@
     text-transform: uppercase;
     color: var(--color-wheat);
     text-align: center;
+    position: sticky;
 }
 
 .navigation ul {
@@ -62,8 +63,8 @@
 }
 
 .sectionListOpen{
-    position: relative;
-    z-index: 200;
+    position: absolute;
+    z-index: 30;
     width: 100%;
     left: 0;
     background: var(--color-grey)

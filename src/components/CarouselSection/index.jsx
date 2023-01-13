@@ -1,11 +1,56 @@
-import React, {useEffect, useState} from 'react';
-import styles from '../../styles/CarouselSection.module.css'
-import CarouselElement from './CarouselElement';
-import bg1 from '../../../public/background1.jpg'
+import React from "react";
+import {CarouselData} from "../../static/staticCarousel"; 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./styles.css";
+import "../../App.css"
+
+export default function CarouselSection() {
+    return(
+        <>
+            <Swiper
+                spaceBetween={1}
+                loop={true}
+                centeredSlides={true}
+                autoplay={{delay: 2500, disableOnInteraction: false,}}
+                pagination={{clickable: true,}}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className='mySwiper'
+            >
+                {CarouselData.map(({id, src, title, subtitle})=> (
+                    <SwiperSlide key={id} style={{backgroundImage: `url(${src})`}}>
+                        <div className="carouselwrapper" >
+                            <div className="carouseltextwrapper">
+                                <h2>I am</h2>
+                                <h2 className="carousel_title">{title}</h2>
+                                <p className="carousel_description">{subtitle}</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </>
+    )
+}
 
 
 
+// import CarouselElement from './CarouselElement';
+// import bg1 from '../../../public/background1.jpg'
+
+
+
+/*
 export default function CarouselSection(){
+    
 
     const data = [{
         title: "erstes Bild",
@@ -41,7 +86,15 @@ export default function CarouselSection(){
             </div>
         </section> 
     )
-}/* */
+}*/
+
+
+
+
+
+
+
+
 /*
 import React, { useState } from 'react';
 

@@ -3,6 +3,7 @@
     color: var(--color-wheat);
     min-height: 100vh;
     width: 100%;
+    padding-top: 50px;
 }
 
 .innerSection {
@@ -28,7 +29,7 @@ padding-right: 30px;
 }
 
 .rightSection{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .aboutMeSection 

@@ -120,3 +120,11 @@ a {
         margin-right: 0px;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .triangle {
+        border-top: 80px solid var(--color-wheat);
+
+    }
+}

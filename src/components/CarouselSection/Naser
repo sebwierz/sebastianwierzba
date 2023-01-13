@@ -1,0 +1,106 @@
+/======================== Responsive ============================/
+
+@media screen and (max-width: 1024px) {
+  .carouselwrapper {
+    width: 85%;
+  }
+
+  .swiper-slide img {
+    height: 15rem;
+  }
+
+  .carouseltextwrapper {
+    align-self: center;
+    align-content: center;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carouselwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 1rem;
+  }
+
+  .swiper-slide img {
+    margin-bottom: 0;
+  }
+
+  .carouseltextwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-end;
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .carouselcontainer {
+    padding: 0;
+  }
+  .swiper-slide {
+    margin: 0;
+    padding: 0;
+  }
+
+  .carouselwrapper {
+    width: 85%;
+    margin: 0;
+  }
+
+  .swiper-slide img {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .carouseltextwrapper {
+    padding: 1rem;
+  }
+
+  .swiper-button-next:after {
+    padding-left: 25px;
+  }
+
+  .swiper-button-prev:after {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .carouselcontainer {
+    /* padding: 0; /
+  }
+
+  .swiper-slide {
+    / margin: 0;
+    padding: 0; */
+  }
+
+  .carouselwrapper {
+    width: 85%;
+    margin: 0;
+  }
+
+  .swiper-slide img {
+    height: 25vh;
+    width: 85%;
+  }
+
+  .carouseltextwrapper {
+    padding: 1rem;
+  }
+
+  .swiper-button-next:after {
+    padding-left: 25px;
+  }
+
+  .swiper-button-prev:after {
+    padding-right: 25px;
+  }
+}
