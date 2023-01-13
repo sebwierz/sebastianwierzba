@@ -1,11 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../../styles/CarouselSection.module.css'
 import CarouselElement from './CarouselElement';
+import bg1 from '../../../public/background1.jpg'
+
 
 
 export default function CarouselSection(){
 
-    const data = ["1", "2", "3", "4"];
+    const data = [{
+        title: "erstes Bild",
+        src: 'https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?size=626&ext=jpg&ga=GA1.1.1543015616.1673599659',
+        subTitle: "hallo Welt"
+    }, {
+        title: "zweites  Bild",
+        src: 'https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?size=626&ext=jpg&ga=GA1.1.1543015616.1673599659',
+        subTitle: "hallo Du"
+    }];
     const [currentIndex, setCurrentIndex] = useState(0);
     const carouselInfiniteScroll = () => {
         if (currentIndex === data.length-1){
@@ -25,7 +35,7 @@ export default function CarouselSection(){
             <div className={styles.carouselContainer}>
                {data.map((item, index) => {
                 return(
-                        <CarouselElement currentIndex={currentIndex} item={item} key={index}/>
+                        <CarouselElement currentIndex={currentIndex} item={item} key={index} />
                     ) })
                 }
             </div>
