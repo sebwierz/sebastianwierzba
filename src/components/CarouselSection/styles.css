@@ -2,26 +2,33 @@
     width: 100%;
     height: 380px;
     z-index: 10;
+    font-family: var(--font-family-krub);
+    text-shadow: -10px 0 30px var(--color-white);
+    
 }
 
 .swiper-slide {
     text-align: center;
-    font-family: var(--font-family-krub);
-    font-size: 18px;
+    
     background-size: cover;
     background-repeat: none;
-    font-weight: bold;
-    text-shadow: 0 0 15px var(--color-grey);
+ 
+  
+
 
 }
 
 .swiper-slide h2 {
     padding-bottom: 5px;
-
+    font-weight: bold;
+    font-size:x-large;
 }
 
 .swiper-slide p {
     padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 
 
@@ -48,8 +55,6 @@
     border-radius: 10px;
     padding: 5px;
     gap: 4rem;
-    
-
 }
 
 .carouseltextwrapper {

@@ -68,6 +68,18 @@ p {
 
 }
 
+.downloadIcon {
+    justify-self: center;
+    height: 22px;
+    margin: -4px 10px -4px 0px;
+    fill: var(--color-blue);
+}
+
+.button:hover .downloadIcon {
+    fill: var(--color-black);
+    text-shadow: 0.5px 0.5px 1px var(--color-black);
+}
+
 .location {
     align-items: center;
     display: flex;
@@ -84,6 +96,24 @@ p {
 
 .description {
     padding: 20px 0px;
+}
+
+.description {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    overflow: hidden;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%
+    }
 }
 
 .buttons {

@@ -1,5 +1,5 @@
-import img1 from "../assets/background1.jpg";
-import img2 from '../assets/background2.jpg';
+import img1 from "../assets/backgroundData.png";
+import img2 from '../assets/backgroundLeaves.png';
 
 export const CarouselData = [
     {
