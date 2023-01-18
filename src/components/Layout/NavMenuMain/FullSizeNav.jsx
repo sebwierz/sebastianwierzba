@@ -2,7 +2,6 @@ import React from 'react';
 import NavItem from "./NavItem.jsx";
 import {staticNav} from '../../../static/staticNav.js';
 import styles from '../../../styles/FullSizeNav.module.css'
-import Scrollspy from 'react-scrollspy';
 
 
 
@@ -15,8 +14,8 @@ export default function FullSizeNav({name}){
     })
 
     return(
-        <Scrollspy items={[{NavItems}]} currentClassName={styles.active}>
-                <div className={styles.titleAndNav}>
+        <>
+            <div className={styles.titleAndNav}>
                 <h1 className={styles.title}>{name}</h1>
                 <nav className={styles.navigation}>
                     <ul>
@@ -24,7 +23,7 @@ export default function FullSizeNav({name}){
                     </ul>
                 </nav>                
             </div>
-        </Scrollspy>
+        </>
     )
 }
 

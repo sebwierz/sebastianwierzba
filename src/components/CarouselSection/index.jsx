@@ -89,12 +89,6 @@ export default function CarouselSection(){
 }*/
 
 
-
-
-
-
-
-
 /*
 import React, { useState } from 'react';
 

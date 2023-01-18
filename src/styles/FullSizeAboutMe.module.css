@@ -12,24 +12,27 @@
     height: auto;
     max-width: 1200px;
     margin: auto;
-    padding: 60px 10px 0px;
+    padding: 60px 0px 0px;
+
 }
 
 .leftSection{
-padding-right: 30px;
+padding-right: 0;
 }
 
 .verticalLine{
     border-left: 2px solid var(--color-blue);
-    height: 80vh;
-    left: 50%;
-    margin-left: -3px;
+    height: 70vh;
+    border-width: 4px;
+
     top: 0;
-    padding: 0px 30px;
+    padding: 0px 15px 0px 15px;
+
 }
 
 .rightSection{
-    padding-top: 30px;
+    padding-top: 30px 10px 0px 10px;
+
 }
 
 .aboutMeSection 
@@ -61,7 +64,7 @@ p {
 .icons {
     display: flex;
     justify-content: center;
-    padding: 8px 20px;
+    padding: 8px 0px;
     margin: auto;
 }
 
@@ -100,7 +103,6 @@ p {
 
 .buttons {
     display: flex;
-    justify-content: flex-end;
     margin-top: 20px;
     
 }
@@ -114,7 +116,7 @@ p {
     color: var(--color-blue);
     padding: 11px 25px;
     border-radius: 10px;
-    margin-left:30px;
+    margin-right: 30px;
     transition-duration: 0.4s;
     min-width: 150px;
     cursor: pointer;

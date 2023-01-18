@@ -10,29 +10,6 @@ footer {
     padding: 20px 0px 8px 0px;
 }
 
-.upbutton{
-    background-color: var(--color-blue);
-    height: 72px;
-    width: 72px;
-    
-    border-radius: 10px;
-    border: none;
-}
-
-.upbutton:hover {
-    cursor: pointer;
-    transition-duration: 0.4s;
-    transform: scale(1.2);
-    opacity: 0.75;
-}
-
-.arrow{
-    fill: var(--color-wheat);
-    height: 55px;
-    stroke: var(--color-blue);
-    stroke-width: 10px;
-}
-
 .icons {
     display: flex;
     justify-content: center;
