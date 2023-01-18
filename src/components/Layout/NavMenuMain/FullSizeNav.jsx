@@ -15,8 +15,8 @@ export default function FullSizeNav({name}){
     })
 
     return(
-        <Scrollspy items={[{NavItems}]} currentClassName={styles.active}>
-                <div className={styles.titleAndNav}>
+        <>
+            <div className={styles.titleAndNav}>
                 <h1 className={styles.title}>{name}</h1>
                 <nav className={styles.navigation}>
                     <ul>
@@ -24,7 +24,7 @@ export default function FullSizeNav({name}){
                     </ul>
                 </nav>                
             </div>
-        </Scrollspy>
+        </>
     )
 }
 

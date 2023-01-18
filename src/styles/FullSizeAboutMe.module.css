@@ -21,8 +21,9 @@ padding-right: 30px;
 
 .verticalLine{
     border-left: 2px solid var(--color-blue);
-    height: 80vh;
+    height: 70vh;
     left: 50%;
+    border-width: 4px;
     margin-left: -3px;
     top: 0;
     padding: 0px 30px;
