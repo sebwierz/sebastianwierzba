@@ -1,18 +1,19 @@
 .contactSection {
     background-color: var(--color-lightblue);
     color: var(--color-black);
-    width: 100%;
     min-height: 100vh;
     width: 100%;
     scroll-margin-top: 57px;
 }
 
-.triangle{
+.triangle {
+    display: flex;
+    margin: auto;
     width: 0;
     height: 0;
-    border-top: 100px solid var(--color-wheat);
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;    
+    border-top: 120px solid var(--color-wheat);
+    border-left: 48vw solid transparent;
+    border-right: 48vw solid transparent;
 }
 
 .innerSection {
@@ -36,12 +37,12 @@
   display: block;
 }
 
-.description a {
+a {
     color: inherit;
-    text-decoration:inherit;
+    text-decoration: inherit;
 }
 
-.contactSection .button {
+.button {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -67,13 +68,18 @@
     color: var(--color-wheat);
     text-decoration: none;
     text-shadow: 0.5px 0.5px 1px var(--color-grey);
+    transform: scale(1.2);
 }
+
 
 .icons {
     display: flex;
     justify-content: center;
-    padding: 8px 20px;
-    margin: auto;
+}
+.icons a{
+    display: inline-flex;
+    justify-content: center;
+    margin: 18px 30px;
 }
 
 .icon:hover {
@@ -86,7 +92,6 @@
 .icon {
     fill: var(--color-blue);
     height: 35px;
-    margin: 10px 20px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -94,9 +99,6 @@
         justify-content: flex-start;
     }
 
-    .button{
-        margin: 0; 
-    }
 
     .alignleft{
         display: flex;
@@ -104,23 +106,26 @@
     }
 
     .icons{
-        padding-left: 20px;
         justify-content: flex-start;
-        margin: 0;
+
     }
 
     .icon{
         padding-top: 3px;
         height: 46px;
-        padding-bottom: -3px;
+        padding-bottom: -3px; 
     } 
+
+    .icons a {
+        margin-left: 80px ;
+        margin-right: 0px;
+    }
 }
 
-@media only screen and (min-width: 600px) {
-    
-
-}
 
 @media only screen and (max-width: 600px) {
-    
+    .triangle {
+        border-top: 80px solid var(--color-wheat);
+
+    }
 }

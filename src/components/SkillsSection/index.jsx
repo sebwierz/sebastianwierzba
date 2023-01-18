@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../../styles/SkillsSection.module.css';
 
+
 export default function SkillsSection(){
 
     return(

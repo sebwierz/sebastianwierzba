@@ -6,7 +6,6 @@ import styles from '../../../styles/MobileNav.module.css'
 
 
 export default function NavList({isNavExpanded, setIsNavExpanded}){
-
     function handleClose(e){
         e.preventDefault()
         setIsNavExpanded(!isNavExpanded)
@@ -14,7 +13,7 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
 
     const NavItems = staticNav.map((item)=>{
         return(
-            <NavItem key={item.id} title={item.title} link={item.link} />
+            <NavItem key={item.id} title={item.title} link={item.link} handleClose={handleClose} isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded}/>
         )
     })
 
@@ -23,7 +22,7 @@ export default function NavList({isNavExpanded, setIsNavExpanded}){
        <div className={isNavExpanded ? styles.sectionListOpen : styles.sectionListClosed}>    
             <ul>
                 {NavItems}
-                <li><button className={styles.closeButton} onClick={handleClose}>Close</button></li>
+                <li className={styles.closeButton} onClick={handleClose}>Close</li>
             </ul>
        </div>
     )

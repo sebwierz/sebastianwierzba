@@ -31,6 +31,7 @@
     text-transform: uppercase;
     color: var(--color-wheat);
     text-align: center;
+    position: sticky;
 }
 
 .navigation ul {
@@ -44,6 +45,7 @@
     border-style: solid;
     border-width: 1px;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .navigation li:hover {
@@ -52,6 +54,7 @@
     background-color: var(--color-lightblue);
     color: var(--color-black);
     text-shadow: 0.5px 0.5px 1px var(--color-black);
+
 }
 
 .navigation a {
@@ -60,8 +63,8 @@
 }
 
 .sectionListOpen{
-    position: relative;
-    z-index: 200;
+    position: absolute;
+    z-index: 30;
     width: 100%;
     left: 0;
     background: var(--color-grey)
@@ -74,12 +77,7 @@
 
 .closeButton{
     color: var(--color-black);
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    background-color: transparent;
-    cursor: pointer;
+    border-color: var(--color-wheat) !important;
 }
 
 

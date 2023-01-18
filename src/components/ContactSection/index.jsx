@@ -3,6 +3,21 @@ import styles from '../../styles/ContactSection.module.css'
 
 export default function ContactSection(){
 
+    /*const onButtonClick=()=>{
+        fetch('CV.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CV.pdf';
+                alink.click();
+            })
+        })
+        
+    }*/
+
     return(
         <section id="contact" className={styles.contactSection}>
             <div className={styles.triangle}></div>
