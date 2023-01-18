@@ -68,6 +68,7 @@ a {
     color: var(--color-wheat);
     text-decoration: none;
     text-shadow: 0.5px 0.5px 1px var(--color-grey);
+    transform: scale(1.2);
 }
 
 

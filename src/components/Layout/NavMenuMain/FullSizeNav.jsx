@@ -2,7 +2,6 @@ import React from 'react';
 import NavItem from "./NavItem.jsx";
 import {staticNav} from '../../../static/staticNav.js';
 import styles from '../../../styles/FullSizeNav.module.css'
-import Scrollspy from 'react-scrollspy';
 
 
 
